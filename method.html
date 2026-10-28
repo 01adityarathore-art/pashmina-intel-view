@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>How we calculate · Pashmina Intelligence</title>
+<title>How we pick the top 5 · Trend Intelligence</title>
 <style>
-:root{--ink:#111827;--ink-2:#4B5563;--ink-3:#6B7280;--line:#E6E8EC;--line-2:#EEF0F3;--bg:#F6F7F9;--card:#fff;--brand:#8E1B2A;
+:root{--ink:#111827;--ink-2:#4B5563;--ink-3:#6B7280;--line:#E6E8EC;--line-2:#EEF0F3;--bg:#F6F7F9;--card:#fff;--brand:#1D63ED;
   --l1:#2F6FED;--l2:#0E9F8E;--l3:#7C5CFF;--l4:#D98A00;--up:#15803D;--down:#B91C1C}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;-webkit-font-smoothing:antialiased}
@@ -43,113 +43,74 @@ a{color:var(--l1)}
 </head>
 <body>
 <div class="doc">
-  <span class="ey">Pashmina Intelligence · Method note</span>
-  <h1>How we calculate the numbers</h1>
-  <p class="meta">Snapshot 27 Oct 2026 · India · for the dashboard at <a href="https://01adityarathore-art.github.io/pashmina-intel-view/">01adityarathore-art.github.io/pashmina-intel-view</a></p>
+  <span class="ey">Trend Intelligence · Method note</span>
+  <h1>How we pick the top 5 designs and prints</h1>
+  <p class="meta">T-shirts · Lehengas · Tie-dye · India · snapshot 28 Oct 2026</p>
 
-  <p class="lead">Every verdict compares a design or colour with <b>its own normal</b>: the same account's usual likes, the same store's usual sell-out rate, the category's usual search growth. A big brand or a viral post can't win on size alone, and small samples are pulled toward average before anything is judged.</p>
+  <p class="lead">A design makes the top 5 when <b>several independent kinds of evidence</b> agree it is beating its own normal: Google searches growing faster than the category, marketplaces where it sells better than its share of listings, brand sites where it sells out faster than the same store's other pieces, and social posts that get more likes and views than usual. One loud source can't put a design on the list by itself.</p>
 
-  <div class="flow">
-    <div><span class="lv L1">L1</span><b>Search demand</b>How many people search Google for shawls and pashmina, and when</div>
-    <div><span class="lv L2">L2</span><b>Search intents</b>The same searches split by what people typed</div>
-    <div><span class="lv L3">L3</span><b>Designs &amp; colours</b>Do buyers act on it? Do sellers push it?</div>
-    <div><span class="lv L4">L4</span><b>Evidence</b>Every query, piece, post and video behind a number</div>
-  </div>
-
-  <h2>1 · Where the data comes from</h2>
+  <h2>1 · What we collected</h2>
   <table>
-    <thead><tr><th>Source</th><th>What we took</th><th class="r">Volume</th><th class="r">Cost</th></tr></thead>
-    <tbody>
-      <tr><td>Google search (DataForSEO: Google Ads + Labs)</td><td>Monthly searches in India for every shawl and pashmina query, 26 months</td><td class="r">6,136 queries</td><td class="r">$0.41</td></tr>
-      <tr><td>32 seller websites (Shopify catalogues)</td><td>Each piece's title, price, in stock or sold out, launch date</td><td class="r">12,659 pieces · 3,347 sold out</td><td class="r">free</td></tr>
-      <tr><td>Instagram via DuckDuckGo and Google results</td><td>Post likes and comments (Instagram's own API gives none)</td><td class="r">1,631 posts</td><td class="r" rowspan="2">436 SerpApi searches</td></tr>
-      <tr><td>Instagram accounts (SerpApi)</td><td>What 91 accounts posted recently</td><td class="r">857 posts</td></tr>
-      <tr><td>YouTube Data API (your free key)</td><td>Views, likes, comments, channel country</td><td class="r">559 videos · 44.8M views</td><td class="r">free</td></tr>
-      <tr><td>Google Trends, autocomplete, Shopping, Amazon</td><td>Season shape, states, rising questions, mass-market prices and "bought in past month"</td><td class="r">1,054 listings</td><td class="r">in the 436</td></tr>
-    </tbody>
+    <tr><th></th><th class="r">T-shirts</th><th class="r">Lehengas</th><th class="r">Tie-dye</th></tr>
+    <tr><td>Google searches read (DataForSEO, India)</td><td class="r">24,888</td><td class="r">13,822</td><td class="r">10,690</td></tr>
+    <tr><td>…after merging close variants into demand pools</td><td class="r">18,133</td><td class="r">10,256</td><td class="r">6,069</td></tr>
+    <tr><td>Monthly searches, main category</td><td class="r">14.2M</td><td class="r">5.6M</td><td class="r">1.07M</td></tr>
+    <tr><td>Growth vs a year ago (last 3 months)</td><td class="r">+37%</td><td class="r">−23%</td><td class="r">+19%</td></tr>
+    <tr><td>Pieces read on brand websites</td><td class="r">13,178 (52 stores)</td><td class="r">6,177 (38)</td><td class="r">2,481 (30)</td></tr>
+    <tr><td>Marketplace listings (Google Shopping + Amazon)</td><td class="r">480 + 684</td><td class="r">480 + 649</td><td class="r">480 + 681</td></tr>
+    <tr><td>Instagram posts with likes</td><td class="r">1,057</td><td class="r">1,140</td><td class="r">983</td></tr>
+    <tr><td>YouTube videos (views)</td><td class="r">734 (443M)</td><td class="r">970 (1.2B)</td><td class="r">786 (455M)</td></tr>
   </table>
-  <p>Posts and videos from Pakistan, Bangladesh, the Gulf and Indonesia are removed, as are sarees, suits, kurtas and abayas that only mention a shawl.</p>
+  <p>Cost of this snapshot: 612 SerpApi searches, $1.21 of DataForSEO, and 9,496 of YouTube's free 10,000 daily units.</p>
+  <p><b>Myntra, Ajio, Flipkart and Meesho were not scraped.</b> Their terms forbid robots and scrapers, so we read them only as Google Shopping shows them (price, rating, review count), plus Amazon's own "bought in past month" badges.</p>
 
-  <h2><span class="lv L1">L1</span> Search demand</h2>
-  <p>Google reports close variants of a query with <b>one shared number</b>. Adding raw rows counts the same people many times (the raw total is a meaningless 3.9 million), so variants are first merged into <b>demand pools</b>: queries with the same 12-month pattern and the same words once spelling, plurals and synonyms (women = ladies = woman) are evened out. Only pools are added up.</p>
-  <div class="ex"><b>Example.</b> "pashmina shawl", "shawl pashmina", "pashmina woolen shawl", "pashma shawls" and 5 more all show 90,500 a month. They are one pool, counted once: <span class="calc">90,500, not 9 × 90,500</span>.</div>
+  <h2>2 · The four evidence families</h2>
+  <table>
+    <tr><th>Family</th><th>What we compare</th><th class="r">Counts as up</th><th class="r">Counts as down</th></tr>
+    <tr><td><b>S</b> · Google search</td><td>The design's search growth ÷ the category's growth. Needs 300+ searches/month.</td><td class="r">≥ 1.08×</td><td class="r">≤ 0.92×</td></tr>
+    <tr><td><b>M</b> · Marketplaces</td><td>Its share of Amazon "bought" + Myntra/Ajio/Flipkart reviews ÷ its share of listings. Needs 5+ listings.</td><td class="r">≥ 1.15×</td><td class="r">≤ 0.87×</td></tr>
+    <tr><td><b>T</b> · Sell-through</td><td>How often its pieces are sold out ÷ how often the same store's pieces are. Needs 30+ pieces.</td><td class="r">≥ 1.08×</td><td class="r">≤ 0.93×</td></tr>
+    <tr><td><b>O</b> · Social</td><td>Instagram likes vs the account's usual, YouTube views vs typical, and its share of this month's posts.</td><td class="r">≥ 1.10×</td><td class="r">≤ 0.90×</td></tr>
+  </table>
+  <p>Each family needs a minimum sample (300 searches a month, 5 listings, 30 pieces), and social numbers built on few posts are pulled toward 1.0×. A design with 9 pieces can't look like a winner just because 3 of them sold out.</p>
+
+  <h2>3 · Grades</h2>
+  <p><span class="pill p1">Confirmed</span> 3+ families up and none down, in two weekly snapshots in a row. <span class="pill p2">Likely</span> 2+ up, none down. <span class="pill p1">Leaning up</span> more up than down. <span class="pill p4">Early signal</span> 1 up, nothing down. <span class="pill p3">Mixed</span> as many up as down. <span class="pill p5">Leaning down</span>, <span class="pill p5">Cooling</span> more down than up. <span class="pill p5">Thin data</span> fewer than 2 families have data.</p>
+  <p><b>Top 5</b> takes designs that are a real slice of the market (at least 1% of design searches, 2% of brand-site pieces or 3% of marketplace listings) and are not falling, ranked by grade, then by how many more families are up than down, then by score (the average of the family numbers). If fewer than 5 qualify, a small design that is clearly rising fills the gap, marked <i>small</i>. This is the first snapshot, so nothing can be <i>Confirmed</i> yet. That needs the next weekly refresh.</p>
+
+  <div class="ex"><b>Worked example: Henley T-shirts</b><br>
+    <span class="calc">Search: 278,111/month, +554% vs a year ago, against +37% for all T-shirts → (1 + 5.54) ÷ (1 + 0.37) = <b>4.77×</b> → up.<br>
+    Social: likes, views and post share average <b>2.45×</b> → up. Sell-through: 13 of 84 pieces sold out, <b>1.02×</b> the stores' normal → flat.<br>
+    Marketplaces: only 2 listings name Henley, below the 5 needed → no data. Result: 2 up, 0 down → <b>Likely</b>, ranked #1.</span></div>
+
+  <h2>4 · T-shirt prints</h2>
+  <p>A T-shirt's design is two things: its <b>style</b> (fit, neck, fabric: oversized, henley, polo…) and its <b>print</b>, meaning what is on it. Prints are mapped in three levels: <b>world</b> (Anime, Superheroes, Gods & spiritual, Sports, Music…), <b>franchise</b> (Naruto, Spider-Man, Mahadev, RCB…) and <b>character</b> (Kakashi, Itachi, Luffy, Gojo…). A character counts towards its franchise and world too. A second dimension, <b>print style</b>, covers how it is printed or placed: back print, puff print, all-over, minimal chest logo, typography.</p>
   <ul>
-    <li><b>Volume</b> = average monthly searches over the last 12 months.</li>
-    <li><b>Growth</b> = last 3 months ÷ the same 3 months a year earlier − 1. Three months smooth Google's rounding.</li>
-    <li><b>Removed as noise:</b> a Class 6 English chapter called "The Kashmiri Shawl", the actress Pashmina Roshan, apartment projects named Pashmina, knitting patterns.</li>
+    <li>Each print gets the same four families and grades as designs. Only searches that say "t shirt" count, so "spiderman" alone (the film) is not a tee search.</li>
+    <li>Look-alike words are guarded: "Levi" is Levi's jeans unless it says Ackerman or AOT. "Shiv Naresh" and "Duke" are brands, not Mahadev or KTM. "The Bear House" and "American Eagle" are brands, not animals.</li>
+    <li><b>Culture</b> is a fifth read, kept out of the grade: Google interest in the show, star or team itself, last 13 weeks against the same weeks a year ago. When culture rises and tee searches haven't yet, the print goes on the <b>Next wave</b> list.</li>
+    <li>Words searched with "t shirt" that match no print are listed as <b>spotted, not on our map</b>, so new prints (a new film, a meme) show up even before we name them.</li>
   </ul>
-  <p>Result: <b>1.15M</b> shawl searches a month; <b>421K</b> are pashmina or Kashmiri (37%), up <b>85%</b>, peaking in December.</p>
 
-  <h2><span class="lv L2">L2</span> Search intents</h2>
-  <p>Each pool goes into the <b>first</b> intent it matches, in this order, so every search is counted exactly once and the shares add up to 100%:</p>
-  <p><span class="f">Is it real</span> → <span class="f">Price</span> → <span class="f">Where to buy</span> → <span class="f">Brand</span> → <span class="f">Design</span> → <span class="f">Colour</span> → <span class="f">Occasion &amp; gift</span> → <span class="f">Men</span> → <span class="f">Women</span> → <span class="f">Stoles &amp; scarves</span> → <span class="f">Learn &amp; care</span> → otherwise <span class="f">Just browsing</span></p>
-  <div class="ex"><b>Example.</b> "pure pashmina shawl price" mentions both purity and price; it lands in <b>Is it real</b> because that comes first. "Is it real" totals <span class="calc">27,460 a month = 6.5% of pashmina searches, +97% vs last year</span>. <b>Cost per click</b> is what advertisers pay Google for that click, weighted by volume.</div>
+  <h2>5 · Life stages</h2>
+  <p>"Who it is for" is read from what people type and how pieces are sold: words like <i>baby, kids, boys, girls, teen, college, bride, bridesmaid, mom</i>; sizes (2–3Y, 9–10Y); and style cues (anime, Korean and aesthetic lean teens; oversized, gym and couple lean young adults; polo, office and plus size lean adults). It is a reading of words, not demographic data.</p>
 
-  <h2><span class="lv L3">L3</span> Buyer pull: what buyers do</h2>
-  <p>Each signal is a ratio where <b>1.00× means normal</b>:</p>
-  <table>
-    <thead><tr><th>Signal</th><th>How it's worked out</th></tr></thead>
-    <tbody>
-      <tr><td><b>Instagram likes</b></td><td>Each post's likes ÷ that account's usual likes (median of its 3+ posts; otherwise the typical post or reel). Averaged on a log scale per account, then across accounts.</td></tr>
-      <tr><td><b>Sells out</b></td><td>Pieces of the design that sold out ÷ how many would have, at each store's own sell-out rate.</td></tr>
-      <tr><td><b>YouTube views</b></td><td>Each video's views ÷ the typical video that names a design. Averaged per channel.</td></tr>
-      <tr><td><b>Amazon pull</b></td><td>Share of "bought in past month" ÷ share of listings. Mass tier only, as Amazon is mostly imitation pashmina.</td></tr>
-    </tbody>
-  </table>
-  <p>Then two safety steps:</p>
+  <h2>6 · Clean-ups we applied</h2>
   <ul>
-    <li><b>Pulled toward average:</b> <span class="f">adjusted = ratio ^ (n ÷ (n + k))</span>. With few posts or pieces (small n) the ratio moves toward 1.00×.</li>
-    <li><b>Capped</b> between 0.4× and 2.5×, so no single signal can decide alone.</li>
-  </ul>
-  <p><b>Buyer pull</b> = the geometric mean of the signals that have enough data.</p>
-  <h3>Seller push</h3>
-  <p>The design's share of Instagram posts and website listings that name a design (an average of the two). <b>New launches</b> = its share of pieces launched in the last 120 days and posts from the last 60 days ÷ its share before that.</p>
-  <h3>Verdicts</h3>
-  <table>
-    <thead><tr><th>Verdict</th><th>Rule</th></tr></thead>
-    <tbody>
-      <tr><td><span class="pill p1">Stock now</span></td><td>Buyer pull ≥ 1.12× and seller push at or above the tier's median</td></tr>
-      <tr><td><span class="pill p2">Early bet</span></td><td>Buyer pull ≥ 1.12× but seller push below the median: wanted, few sell it</td></tr>
-      <tr><td><span class="pill p4">Crowded</span></td><td>Buyer pull ≤ 0.89× and push at or above the median (or launches growing ≥ 1.15×)</td></tr>
-      <tr><td><span class="pill p5">Skip</span></td><td>Buyer pull ≤ 0.89× and little push</td></tr>
-      <tr><td><span class="pill p3">Hold</span></td><td>Everything in between (within ±12% of normal)</td></tr>
-    </tbody>
-  </table>
-  <div class="ex"><b>Kalamkari, luxury tier → Stock now.</b> <span class="calc">167 of 405 pieces sold out = 1.32× its stores' usual rate → adjusted for sample size 1.30×</span>. Seller push is 13.5%, above the luxury median of 3.6%, so the verdict is Stock now (median price ₹1.75L).</div>
-  <div class="ex"><b>Kani, all buyers → Crowded.</b> <span class="calc">Likes 0.96× (159 accounts) · YouTube 0.72× → 0.75× (32 channels) · sell-out 0.95× (2,055 pieces) → buyer pull = (0.96 × 0.75 × 0.95)<sup>1/3</sup> = 0.88×</span>. Seller push is 24.8%, far above the 7.3% median, so the verdict is Crowded, even though Kani is the most-searched design (13.8K a month).</div>
-  <p><b>Tiers</b> come from real prices: Mass under ₹5,000, Mid ₹5,000–25,000, Luxury ₹25,000+. USD and EUR stores are converted at approximate rates (₹88, ₹101).</p>
-
-  <h2>Trend Lab: what is trending now</h2>
-  <p>Five signals, each against normal, adjusted and capped as above, then log-averaged into a <b>trend score</b>:</p>
-  <ol>
-    <li>Share of this month's posts (last 30 days) ÷ share in the 5 months before</li>
-    <li>Likes vs each account's usual, this month</li>
-    <li>Share of launches in the last 60 days ÷ share among older pieces at the same stores</li>
-    <li>Google growth ÷ the category's growth: (1 + colour growth) ÷ (1 + 85%)</li>
-    <li>Sell-out vs its store</li>
-  </ol>
-  <p><b>Hot</b> ≥ 1.25× · <b>Rising</b> ≥ 1.08× · <b>Steady</b> · <b>Cooling</b> ≤ 0.90× · fewer than 3 signals = <b>Thin data</b>. "Driven by" names only the signals pushing in the verdict's direction.</p>
-  <div class="ex"><b>Maroon → Rising (1.15×).</b> <span class="calc">Post share 0.96× → 0.97 · likes 3.88× → 2.41 (11 posts) · launches 0.64× → 0.68 · Google +147% vs category +85% → 1.34 · sell-out 0.96× → 0.96 · score = (0.97 × 2.41 × 0.68 × 1.34 × 0.96)<sup>1/5</sup> = 1.15×</span>. Buyers love maroon on Instagram and search it more, but sellers are launching less of it: a gap.</div>
-
-  <h2>The other tabs</h2>
-  <ul>
-    <li><b>Stock these:</b> design + colour pairs that sell out more than their stores' other pieces at 2+ stores, ranked by that lift × the design's buyer pull. The price shown is the middle half of the pieces that actually sold out.</li>
-    <li><b>Opportunity matrix:</b> the same sell-out lift for every design × colour pair. "White space" = 1.2×+ lift, 3+ sold, few listed. <i>Example: Aari in navy: 7 of 35 sold out at 10 stores = 1.63×.</i></li>
-    <li><b>Launch radar:</b> pieces with a publish date in the last 30 days (1,067).</li>
-    <li><b>Content playbook:</b> 451 posts from 87 accounts with 3+ posts, each vs its own account's usual likes. Posts with a feature vs without it. <i>Example: reels 1.60× vs photos.</i></li>
-    <li><b>Price ladder:</b> 10th, 25th, 50th, 75th and 90th percentile of listed prices.</li>
+    <li><b>One-month spikes.</b> Google's data showed "lehenga" at 20.4M searches in Sep 2025 against a usual 0.4M. Months above 8× a query's median are set to its highest normal month. Without this fix, every lehenga design looked like it was rising.</li>
+    <li><b>Variants.</b> Google gives close variants the same monthly series. At 20K+ searches, an identical moving series plus a shared word is counted once ("r k tshirt" is the same people as "tshirt").</li>
+    <li><b>Noise.</b> Skincare ("salicylic acid wash"), hairstyles for lehengas, jeans and home-dye kits are removed or moved to their own group.</li>
+    <li><b>Tie-dye patterns.</b> Titles rarely name the pattern, so Rainbow, Pastel and Monochrome are also read from the colours a title names when it names no pattern.</li>
   </ul>
 
   <h2>Limits</h2>
   <ul>
-    <li>Likes come from posts that search engines show; most carry no price, so Luxury and Mid verdicts rest mainly on sell-outs.</li>
-    <li>"Sold out" can also mean discontinued; comparing within each store limits that. Big stores show only their newest 1,000 pieces.</li>
-    <li>Designs and colours are read from titles, captions and tags. A photo check matched well for Kalamkari, Sozni, Jamawar and Ikat.</li>
-    <li>Google rounds volumes into buckets, so small queries move in steps.</li>
-    <li>This is the first snapshot; week-on-week change starts with the next refresh (≈195 SerpApi searches; Google volumes reused for 25 days).</li>
+    <li>One snapshot shows where things stand now. Two weekly snapshots turn <i>Likely</i> into <i>Confirmed</i>.</li>
+    <li>Tie-dye has the thinnest evidence. Most listings say "tie dye" without the pattern, so its grades are mostly <i>Mixed</i>.</li>
+    <li>Some lehenga designs (Chikankari, Kalamkari) have little search data under those names. Their grades lean on sell-through and social.</li>
+    <li>Brand sites are Shopify stores that publish their catalogue. Myntra, Ajio, Flipkart and Meesho are read only through Google Shopping.</li>
   </ul>
-
-  <div class="foot">Pashmina Intelligence · method note · snapshot 27 Oct 2026. Photos in the dashboard belong to their brands and link back to the source. The code lives in a private repository.</div>
+  <p class="foot">Trend Intelligence · built from public Google, Shopify, Amazon, Instagram and YouTube data. Not shared outside your team.</p>
 </div>
 </body>
 </html>
