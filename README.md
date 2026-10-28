@@ -1,9 +1,32 @@
-# Pashmina Intelligence — view
+# Fashion & Trend Intelligence — Live View
 
-Read-only snapshot of Pashmina Intelligence (27 Oct 2026): https://01adityarathore-art.github.io/pashmina-intel-view/
+**Category-agnostic trend intelligence platform across Indian retail and e-commerce.**
 
-One self-contained page: Google search demand (L1) → search intents (L2) → designs and colours (L3) → queries,
-pieces, posts and videos (L4), plus Trend Lab, Launch radar, Opportunity matrix and Content playbook.
-Photos belong to their brands and link back to the source. The code lives in a separate private repository.
+Direct access to latest snapshots (no login required, fully self-contained with offline embedded imagery):
 
-How the numbers are calculated: https://01adityarathore-art.github.io/pashmina-intel-view/method.html (PDF: method.pdf)
+| Category | Coverage & Insights | Live View |
+| :--- | :--- | :--- |
+| 👕 **T-Shirts** | Streetwear, oversized fits, dye lab (acid wash, pigment dye), GSM, anime & graphic prints, age/demographics | [**View T-Shirt Intel**](https://01adityarathore-art.github.io/pashmina-intel-view/tshirt.html) |
+| 👗 **Lehengas** | Bridal core, wedding planner, sangeet/mehendi occasions, work (zardozi, gota, chikankari), silhouettes | [**View Lehenga Intel**](https://01adityarathore-art.github.io/pashmina-intel-view/lehenga.html) |
+| 🎨 **Tie-Dye** | Wash lab, techniques (shibori, spiral, batik, reverse bleach), colour palettes, fast fashion velocity | [**View Tie-Dye Intel**](https://01adityarathore-art.github.io/pashmina-intel-view/tiedye.html) |
+| 🧣 **Pashmina** | Heritage shawls, cashmere, weave techniques (Kani, Sozni, Tilla), pricing tiers, artisan verifications | [**View Pashmina Intel**](https://01adityarathore-art.github.io/pashmina-intel-view/) |
+
+---
+
+## What the System Answers
+
+For each category, the engine drills down level by level:
+1. **L1 Category Search Demand**: Total search volume in India, seasonality, YoY growth rate, and demand pools.
+2. **L2 Intent Mapping**: What buyers actually type (*price, genuine verification, fit, occasion, gifting, styling*).
+3. **L3 Design & Colour Board**: Buyer pull vs seller push, catalogue stock vs sell-out velocity, price ladders.
+4. **L4 Proof & Evidence**: The exact queries, Shopify pieces, Instagram reels, and YouTube videos driving each verdict.
+5. **Confidence Grades**: 4-family concordance (*Search Demand, Marketplace Velocity, D2C Sell-Through, Creator Buzz*) yielding *Confirmed*, *Likely*, *Early Signal*, *Mixed*, or *Cooling*.
+6. **Marketplace Pulse**: Amazon *"bought in past month"* metrics across Men, Women, Boys, Girls, and Baby, plus Google Shopping merchant review densities (without illegal platform scraping).
+7. **Who It's For**: Life-stage and demographic attribution inferred from search modifiers, sizing curves, and styling intent.
+
+---
+
+## Methodology
+
+* **Interactive Note**: [How We Calculate](https://01adityarathore-art.github.io/pashmina-intel-view/method.html)
+* **Downloadable Document**: [`method.pdf`](https://01adityarathore-art.github.io/pashmina-intel-view/method.pdf)
